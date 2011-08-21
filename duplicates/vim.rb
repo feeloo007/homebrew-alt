@@ -18,7 +18,7 @@ class Vim < Formula
                           "--enable-multibyte",
                           "--with-tlib=ncurses",
                           "--enable-pythoninterp",
-                          "--with-python-config-dir=/usr/local/Cellar/python/2.7.2/lib/python2.7/config/",
+                          "--with-python-config-dir=/usr/local/lib/python2.7/config",
                           "--enable-rubyinterp",
                           "--with-features=huge"
     system "make"
