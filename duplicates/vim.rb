@@ -10,7 +10,8 @@ class Vim < Formula
   head 'https://vim.googlecode.com/hg/'
 
   def install
-    system "./configure", "--prefix=#{prefix}",
+    system "./configure", "--disable-darwin",
+                          "--prefix=#{prefix}",
                           "--mandir=#{man}",
                           "--enable-gui=no",
                           "--without-x",
